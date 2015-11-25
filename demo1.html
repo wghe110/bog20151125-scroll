@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0,shrink-to-fit=no">
+	<title>滚动条demo</title>
+	<style>
+		.tipsBar{
+			line-height: 40px;
+			text-align: center;
+		}
+		.scrollBox{
+			width:300px;
+			height: 200px;
+			overflow: auto;
+			margin:0 auto;
+		}
+		.scrollBox-t{
+			width:300px;
+			height: 200px;
+			overflow: auto;
+			margin:0 auto;
+		}
+		.scrollBox-t::-webkit-scrollbar{/*整体部分*/
+			width: 10px;
+			height:10px;
+		}
+		.scrollBox-t::-webkit-scrollbar-track{/*滑动轨道*/
+			-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			background: rgba(0,0,0,0.1);
+		}
+
+		.scrollBox-t::-webkit-scrollbar-thumb{/*滑块*/
+			border-radius: 5px;
+			-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<p class="tipsBar">==========原始滚动条========</p>
+	<div class="scrollBox">滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容</div>
+
+	<p class="tipsBar">=========统一样式后的滚动条=======</p>
+	<div class="scrollBox-t">滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容滚动条内容</div>
+</body>
+</html>
